@@ -7,4 +7,4 @@ jobs :
     runs-on: ubuntu-latest
     steps:
       - name: printing event names
-        run : echo "this pipe line is running by {{github.event_name}}"
+        run : echo "this pipe line is running by ${{github.event_name}}"

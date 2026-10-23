@@ -1,7 +1,7 @@
 name: info of event triggers
 on: 
   push:
-  workflow-dispatch:
+  workflow_dispatch:
 jobs :
   manual_trigger_job:
     runs-on: ubuntu-latest

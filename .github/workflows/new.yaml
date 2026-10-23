@@ -1,0 +1,10 @@
+name: info of event triggers
+on: 
+  push:
+  workflow-dispatch:
+jobs :
+  manual_trigger_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: printing event names
+        run : echo "this pipe line is running by {{github.event_name}}"
